@@ -10,6 +10,8 @@ object ScalaFiddle {
     private val bound = 100
   
     def x = _x
+    // _=는 Setter를 정의한다. 그래서 띄어서 쓰면안된다.
+    // Unit은 자바의 void와 같다고 생각하면된다.
     def x_= (newValue: Int): Unit = {
       if (newValue < bound) _x = newValue else printWarning
     }
